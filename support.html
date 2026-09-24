@@ -26,6 +26,27 @@
         .card p { margin-bottom: 0; color: #2C2C2C; }
         .card ul { margin: 8px 0 0 0; padding-left: 20px; }
         .card li { margin-bottom: 4px; color: #2C2C2C; }
+        .card img { width: 100%; border-radius: 12px; margin-bottom: 12px; display: block; }
+        /* 顶部「自动计数画面」：左图右文两列并列 */
+        .hero {
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .hero-media { flex: 0 0 220px; }
+        .hero-media img { width: 100%; border-radius: 12px; display: block; }
+        .hero-text { flex: 1 1 0; min-width: 0; }
+        .hero-text p { margin-bottom: 12px; color: #2C2C2C; }
+        .hero-text p:last-child { margin-bottom: 0; }
+        /* 窄屏（手机浏览器）自动改为上下堆叠 */
+        @media (max-width: 640px) {
+            .hero { flex-direction: column; align-items: stretch; gap: 16px; }
+            .hero-media { flex: none; max-width: 240px; margin: 0 auto; }
+        }
         .contact {
             background: linear-gradient(135deg, #EE9B85 0%, #F2DDA0 100%);
             border-radius: 16px;
@@ -58,6 +79,17 @@
 <body>
     <div class="container">
         <h1>支持</h1>
+
+        <h2>自动计数画面</h2>
+        <div class="hero">
+            <div class="hero-media">
+                <img src="DlbReady.png" alt="自动计数画面">
+            </div>
+            <div class="hero-text">
+                <p>把手机竖放在支架上，放在拜垫正前方约 10~30 厘米处。调整屏幕角度，确保站立时全身都在画面内。保持手机稳定，光线充足，画面中只有你一人。</p>
+                <p>站到框内，保持 1 秒，App 会自动检测你的站立姿态。检测到后，屏幕显示 3、2、1，然后开始计数。你只需专注做动作，App 会自动识别并计数。</p>
+            </div>
+        </div>
 
         <h2>如何做一次大礼拜</h2>
         <div class="card">

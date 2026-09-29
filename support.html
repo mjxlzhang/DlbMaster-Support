@@ -26,8 +26,6 @@
         .card p { margin-bottom: 0; color: #2C2C2C; }
         .card ul { margin: 8px 0 0 0; padding-left: 20px; }
         .card li { margin-bottom: 4px; color: #2C2C2C; }
-        .card img { width: 100%; border-radius: 12px; margin-bottom: 12px; display: block; }
-        /* 顶部「自动计数画面」：左图右文两列并列 */
         .hero {
             background: #fff;
             border-radius: 16px;
@@ -42,7 +40,6 @@
         .hero-text { flex: 1 1 0; min-width: 0; }
         .hero-text p { margin-bottom: 12px; color: #2C2C2C; }
         .hero-text p:last-child { margin-bottom: 0; }
-        /* 窄屏（手机浏览器）自动改为上下堆叠 */
         @media (max-width: 640px) {
             .hero { flex-direction: column; align-items: stretch; gap: 16px; }
             .hero-media { flex: none; max-width: 240px; margin: 0 auto; }
@@ -148,13 +145,18 @@
         </div>
 
         <div class="card">
-            <h3>试用期是多久？</h3>
-            <p>首次启动后，您有 7 天免费试用期，期间全部功能可用。试用期结束后，可一次性支付 ¥12 解锁永久使用。</p>
+            <h3>免费版和高级版有什么区别？</h3>
+            <p>免费版可永久使用基础功能（计数、周数据、基础成就）。高级版解锁累计大礼拜、月度数据、年度数据、累计勋章、专属标识。</p>
+        </div>
+
+        <div class="card">
+            <h3>高级版多少钱？</h3>
+            <p>一次性支付 ¥12，永久使用。</p>
         </div>
 
         <div class="card">
             <h3>如何恢复购买？</h3>
-            <p>在收费墙或设置页点击「恢复购买」，使用同一 Apple ID 即可恢复永久版权益。</p>
+            <p>在收费墙或设置页点击「恢复购买」，使用同一 Apple ID 即可恢复高级版权益。</p>
         </div>
 
         <div class="card">
